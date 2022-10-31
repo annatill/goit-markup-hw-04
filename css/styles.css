@@ -285,7 +285,9 @@ img {
 }
 
 .icon {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 270px;
     height: 120px;
     background-color: var(--section-my-team-background);
@@ -293,7 +295,6 @@ img {
     background-position: center;
     background-size: contain;
     margin-bottom: 30px;
-    padding: 25px 100px;
 }
 
 .feature-list .functions {
@@ -345,7 +346,7 @@ img {
 }
 
 .card-content{
-    padding: 30px 0px 0px;
+    padding: 30px 0px 30px;
     text-align: center;
 }
 .card-thumb .social-icon {
@@ -359,8 +360,10 @@ img {
 
 .card-thumb .social-list {
     justify-content: center;
-    margin-top: 16px;
-    padding-bottom: 30px;
+}
+
+.social-list li {
+    margin-right: 10px;
 }
 
 .command-list {
@@ -387,6 +390,7 @@ img {
 
     font-size: 16px;
     line-height: 1.18;
+    margin-bottom: 16px;
 }
 
 .title-customers {
@@ -431,12 +435,13 @@ img {
     display: flex;
 }
 
-.footer > .container {
-    margin-left: 0;
-    margin-right: 0;
-    width: initial;
+.footer-nav {
     margin-right: 70px;
-    padding-right: 0;
+}
+
+.footer > .container {
+    display: flex;
+    align-items: baseline;
 }
 
 
@@ -502,11 +507,12 @@ img {
 }
 
 .social-link {
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 44px; 
     height: 44px;
     border-radius: 50%;
-    margin-right: 10px;
 }
 
 .social-list > li:last-child > .social-link {
@@ -519,8 +525,6 @@ img {
 }
 
 .social-icon {
-    margin: auto;
-    display: block;
     fill: var(--white-color);
 }
 
@@ -535,7 +539,7 @@ img {
 .filters {
     display: flex;
     justify-content: center;
-    margin-bottom: 18px;
+    margin-bottom: 50px;
 }
 
 .button {
@@ -600,6 +604,7 @@ img {
 
 .article-title {
     border: 1px solid #EEEEEE;
+    border-top: none;
     padding: 20px 24px;
 }
 .projects-list .title {
